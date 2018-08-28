@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "--------------> Env directory detected as $ENV_DIR"
 export_env_dir() {
   echo "-----> Loading environment information"
   env_dir=$1
