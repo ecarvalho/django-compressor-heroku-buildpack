@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "--------------> Env directory detected as $ENV_DIR"
+echo "--------------> Env directory detected as $3"
 export_env_dir() {
   echo "-----> Loading environment information"
   env_dir=$1
@@ -15,6 +15,6 @@ export_env_dir() {
 }
 cd "$1" || exit 1
 echo "-----> Exporting application config values"
-export_env_dir $ENV_DIR
+export_env_dir $3
 echo "-----> Running django-compressor"
 python manage.py compress --force
