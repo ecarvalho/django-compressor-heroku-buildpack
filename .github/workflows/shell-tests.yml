@@ -1,0 +1,19 @@
+name: Static checks and tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y shellcheck
+    - name: Run shellcheck
+      run: |
+        shellcheck $(find . -name '*.sh') bin/*
+    - name: Run tests
+      run: |
+        bash tests/test.sh
