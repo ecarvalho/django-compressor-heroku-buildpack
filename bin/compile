@@ -25,5 +25,4 @@ MANAGE_FILE=${MANAGE_FILE:-fakepath}
 echo "-----> Running django-compressor"
 python "$MANAGE_FILE" compress --force
 echo "-----> Running collect static again..."
-cp -R staticfiles/CACHE looking_for_group/static/
 python "$MANAGE_FILE" collectstatic --noinput

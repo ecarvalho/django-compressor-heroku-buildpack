@@ -1,3 +1,5 @@
+This project is only a fork from the original Heroku buildpack available at https://github.com/ojarva/django-compressor-heroku-buildpack, with small fixes for a personal project
+
 # Heroku buildpack for django-compressor
 
 [Django-compressor](https://django-compressor.readthedocs.io/en/latest/) is a convenient static files processor for Django, bundling and compressing JS and CSS files from regular HTML tags, without need to define bundles separately.
@@ -8,9 +10,9 @@ Licensed under [MIT license](LICENSE.md).
 
 ## How to enable this buildpack?
 
-Go to https://dashboard.heroku.com/ , select your application, settings, "Add buildpack". Enter `https://github.com/ojarva/django-compressor-heroku-buildpack.git` to buildpack URL field.
+Go to https://dashboard.heroku.com/ , select your application, settings, "Add buildpack". Enter `https://github.com/ecarvalho/django-compressor-heroku-buildpack.git` to buildpack URL field.
 
-Alternatively use Heroku CLI tool with `heroku buildpacks:add https://github.com/ojarva/django-compressor-heroku-buildpack.git`.
+Alternatively use Heroku CLI tool with `heroku buildpacks:add https://github.com/ecarvalho/django-compressor-heroku-buildpack.git`.
 
 ## How to contribute?
 
