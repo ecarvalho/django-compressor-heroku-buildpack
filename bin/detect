@@ -3,8 +3,8 @@
 set -e
 cd "$1" || exit 1
 
-if [ -f requirements.txt ] && [ "$(grep -c -E "^django-compressor" requirements.txt)" -gt 0 ]; then
-  echo django-compressor
+if [ -f requirements.txt ] && [ "$(grep -c -E "^django_compressor" requirements.txt)" -gt 0 ]; then
+  echo django_compressor
   exit 0
 else
   exit 1
